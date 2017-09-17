@@ -14,7 +14,7 @@ These instructions will help you to install the library into your project.
 
 ### how to run on Raspberry Pi (Zero W)
 
-python3 detect.py haarcascade_frontalface_default.xml
+python detect.py haarcascade_frontalface_default.xml
 
 ==============================================================
 
@@ -22,11 +22,11 @@ python3 detect.py haarcascade_frontalface_default.xml
 
 ### how to run on local machine with webcam
 
-python3 track.py
+python track.py
 
 ### how to run on local machine with video files
 
-python3 track.py -v path-to-video-file -b buffer-size
+python track.py -v path-to-video-file -b buffer-size
 
 ==============================================================
 
@@ -34,6 +34,10 @@ python3 track.py -v path-to-video-file -b buffer-size
 
 ### how to run on local machine or Raspberry Pi (Zero W)
 
-python3 detect.py -i path-to-images-files
+python detect.py -i path-to-images-files
 
+=============================================================
 
+## Game finder
+
+python find_game.pyu
