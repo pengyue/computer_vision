@@ -32,7 +32,7 @@ python track.py
 
 python track.py -v path-to-video-file -b buffer-size
 
-==============================================================
+===============================================================
 
 ## Pedestrian Detection
 
@@ -40,8 +40,15 @@ python track.py -v path-to-video-file -b buffer-size
 
 python detect.py -i path-to-images-files
 
-=============================================================
+===============================================================
 
 ## Game finder
 
 python find_game.py
+
+===============================================================
+
+## Real time object detection
+
+python real_time_object_detection.py --prototxt MobileNetSSD_deploy.prototxt.txt --model MobileNetSSD_deploy.caffemodel
+
