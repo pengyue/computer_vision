@@ -44,4 +44,4 @@ python detect.py -i path-to-images-files
 
 ## Game finder
 
-python find_game.pyu
+python find_game.py
