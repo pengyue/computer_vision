@@ -14,7 +14,11 @@ These instructions will help you to install the library into your project.
 
 ### how to run on Raspberry Pi (Zero W)
 
-python detect.py haarcascade_frontalface_default.xml
+python detect.py ../haarcascade_frontalface_default.xml
+
+### how to rin on the PC with webcam
+
+python detect.py -f ../haarcascade_frontalface_default.xml -e ../haarcascade_eye.xml
 
 ==============================================================
 
