@@ -52,3 +52,9 @@ python find_game.py
 
 python real_time_object_detection.py --prototxt MobileNetSSD_deploy.prototxt.txt --model MobileNetSSD_deploy.caffemodel
 
+
+==============================================================
+
+## Streaming face detection into web browser (PC or RPi with webcam)
+
+python main.py
