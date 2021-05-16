@@ -1,5 +1,5 @@
 # import the necessary packages
-from single_motion_detection.single_motion_detector import SingleMotionDetector
+from tracker.single_motion_detection.single_motion_detector import SingleMotionDetector
 from imutils.video import VideoStream
 from flask import Response
 from flask import Flask
@@ -20,11 +20,11 @@ lock = threading.Lock()
 app = Flask(__name__)
 # initialize the video stream and allow the camera sensor to
 # warmup
-#vs = VideoStream(usePiCamera=1).start()
-vs = VideoStream(src=0).start()
+vs = VideoStream(usePiCamera=1).start()
+#vs = VideoStream(src=0).start()
 time.sleep(2.0)
 
-@app.route("/")
+@app.route("/index.html")
 def index():
     # return the rendered template
     return render_template("index.html")

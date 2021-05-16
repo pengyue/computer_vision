@@ -55,7 +55,7 @@ lock = threading.Lock()
 # initialize a flask object
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/index.html")
 def index():
     # return the rendered template
     return render_template("index.html")

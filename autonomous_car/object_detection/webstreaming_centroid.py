@@ -1,6 +1,5 @@
 # import the necessary packages
-from single_motion_detection.single_motion_detector import SingleMotionDetector
-from centroid_tracker.centroid_tracker import CentroidTracker
+from tracker.centroid_detection.centroid_tracker import CentroidTracker
 from imutils.video import VideoStream
 from flask import Response
 from flask import Flask
@@ -42,7 +41,7 @@ app = Flask(__name__)
 vs = VideoStream(src=0).start()
 time.sleep(2.0)
 
-@app.route("/")
+@app.route("/index.html")
 def index():
     # return the rendered template
     return render_template("index.html")
