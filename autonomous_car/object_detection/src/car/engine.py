@@ -1,13 +1,12 @@
 from flask import (
     Blueprint, render_template
 )
-
 import explorerhat as eh
 
-car_engine = Blueprint('car_engine_app', __name__)
+car_engine_app = Blueprint('car_engine_app', __name__)
 
-@car_engine.route("/")
-@car_engine.route("/<state>")
+@car_engine_app.route("/")
+@car_engine_app.route("/<state>")
 def update_robot(state=None):
     if state == 'forward':
         eh.motor.one.backwards(100)
